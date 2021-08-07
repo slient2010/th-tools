@@ -10,17 +10,18 @@ use redis::Commands;
 
 #[derive(Debug, Serialize, Deserialize)]
 struct searchDetails {
- searchResults:Vec<CityInfo>,
+  searchResults:Vec<CityInfo>,
 }
+
 #[derive(Debug, Serialize, Deserialize)]
 struct idValue {
   Id: String,
- Value: String,
+  Value: String,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
 struct resStatus {
-		Timestamp: String,
+   Timestamp: String,
    Ack: String,
    Errors: Vec<String>,
    Extension: Vec<idValue>,
