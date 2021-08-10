@@ -12,3 +12,9 @@ git clone https://github.com/cntehang/th-tools
 # 执行同步工具
 ./th-tools
 ```
+
+##  China cities
+
+You can download the `cities.json` from this repo below.
+
+[https://github.com/modood/Adminitrative-divisions-of-China.git](https://github.com/modood/Adminitrative-divisions-of-China.git)
