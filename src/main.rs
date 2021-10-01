@@ -157,7 +157,7 @@ async fn get_city_id(city: &String) -> i32 {
 
 fn save_to_redis(city: &String, city_id: i32) -> redis::RedisResult<isize> {
     // connect to redis
-    let client = redis::Client::open("redis://:Vp8fICsV3P@hotel-spider-redis.teyixing.com/2")?;
+    let client = redis::Client::open("redis://:hidden@example.com/2")?;
     let mut con = client.get_connection()?;
     // throw away the result, just make sure it does not fail
     let _: () = con.set(city, city_id)?;
